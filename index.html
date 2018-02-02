@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>行啊我的2017</title>
+    <meta name="viewport" charset="utf-8" content="width=device-width,
+    initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=1.0">
+    <link rel="stylesheet" href="dist/app.css" />
+    <link rel="stylesheet" href="dist/my2017.css" />
+    <script src="js/echarts.min.js"></script>
+</head>
+<body>
+  <div id="viewport" class="viewport">
+    <div class="pageview">
+        <img class="my shake shake-chunk" src="images/my.png">
+        <img class="my2017" src="images/2017.png">
+        <div class="foot">
+            <img class="foot1 hide" src="images/foot1.png">
+            <img class="foot2 hide" src="images/foot2.png">
+            <img class="foot3 hide" src="images/foot1.png">
+            <img class="foot4 hide" src="images/foot2.png">
+            <img class="foot5 hide" src="images/foot1.png">
+            <img class="foot6 " src="images/foot2.png">
+        </div>
+        <button id="testbtn" style="display:none"></button>
+    </div>
+    <div class="pageview page3">
+      <header class="page3_header" style="height: 45%">
+        <img class="page3_airplaneLine" src="images/3/airplaneLine.png">
+        <img class="page3_airplane" src="images/3/airplane.png">
+      </header>
+      <div class="page3_content" style="height: 35%">
+        <p style="font-size: .85rem">2017年</p>
+        <p style="font-size: 1.6rem; padding-bottom: .7rem">共飞行了<span style="color: #AE0101">99</span>次</p>
+        <p style="font-size: 1.6rem; padding-bottom: .7rem"><span style="color: #AE0101">180</span>小时</p>
+        <p style="font-size: .85rem">相当于连续飞行<span style="color: #AE0101">75</span>天</p>
+      </div>
+      <footer style="height: 20%">
+
+      </footer>
+    </div>
+    <div class="pageview">
+      <header style="height: 25%">
+        <img style="width: 100%" src="images/4/headerBg.png"/>
+      </header>
+      <div style="height: 30%; text-align: right; padding-top: 3rem; padding-right: 1.5rem">
+        <div style="font-size: .85rem">2017年</div>
+        <div style="font-size: 1.6rem">空中飞行了<b style="color: #AE0101">19999</b>千米</div>
+        <div style="font-size: .85rem">相当于环绕地球<b style="color: #AE0101">3</b>圈</div>
+      </div>
+      <footer style="height: 45%" class="page4_footer">
+        <img class="page4_earth_img" src="images/4/earth.png"/>
+        <img class="page4_bg_line_img" src="images/4/line.png"/>
+        <img class="page4_airplane_img" src="images/4/plane.png"/>
+      </footer>
+    </div>
+    <div class="pageview page5">
+      <div class="page5_content" style="height: 40%">
+        <p style="font-size: .85rem">2017年</p>
+        <p style="font-size: 1.6rem; padding-bottom: .8rem; padding-top: .8rem">出差<span style="color: #AE0101">29</span>个城市</p>
+        <p>其中<span>重庆</span>去了<span style="color: #AE0101">5</span>次</p>
+        <p style="font-size: .85rem">2018你的足迹就要</p>
+        <p style="font-size: .85rem">踏遍全国了其中<span>重庆</span></p>
+      </div>
+      <footer style="height: 60%; width: 100%">
+        <div id="main" style="height:80%;"></div>
+      </footer>
+    </div>
+    <div class="pageview" style="overflow-y: hidden">
+      <header class="page6_header">
+        <img class="page6_header_moon_img" src="images/6/moon.png"/>
+        <img class="page6_header_star1_img" src="images/6/star1.png"/>
+        <img class="page6_header_star2_img" src="images/6/star2.png"/>
+        <img class="page6_header_star3_img" src="images/6/star1.png"/>
+        <img class="page6_header_star4_img" src="images/6/star1.png"/>
+        <img class="page6_header_star_tranlate_img" src="images/6/star1.png"/>
+      </header>
+      <div style="height: 20%">
+        <p>2017年</p>
+        <p>酒店夜宿<span style="color:#AE0101;">19</span>晚</p>
+        <br/>
+        <br/>
+        <p>那么多的美丽夜晚</p>
+        <p>有没有那么一晚是你最难忘的......</p>
+      </div>
+      <footer class="page6_footer" style="height: 30%">
+        <img style="height: 100%; float: right" src="images/6/footerBg.png">
+      </footer>
+    </div>
+    <div class="pageview">
+      <header style="width: 100%; height: 30%; position:relative;">
+        <img class="page7_header_sun_img" src="images/7/sun.png"/>
+        <img style="height: 60%; width: 130%; position: absolute;left: 0; bottom: 0; z-index: 1" class="page7_header_mountain_1_img" src="images/7/mountain1.png"/>
+        <img style="height: 60%; width: 120%; position: absolute;left: 0; bottom: 0; z-index: 2" class="page7_header_mountain_2_img" src="images/7/mountain2.png"/>
+        <img style="height: 60%; width: 150%; position: absolute;right: 0; bottom: 0; z-index: 2" class="page7_header_mountain_3_img" src="images/7/mountain3.png"/>
+        <img style="position: absolute;left: 30%; bottom: 0; z-index: 3; width: 65%" class="page7_header_grassland_img" src="images/7/grassland.png"/>
+        <img style="position: absolute;left: 20%;  bottom: 0; z-index: 4; width: 60%;" class="page7_header_train_img" src="images/7/train.png"/>
+      </header>
+      <div style="height: 30%; text-align: right; padding-right: 1.5rem">
+        <p>2017年</p>
+        <p>乘坐火车出行<span style="color:#AE0101;">19</span>次</p>
+        <br/>
+        <br/>
+        <p>窗外那么多的美景</p>
+        <p>哪一次的美景让你过目不忘......</p>
+      </div>
+      <footer style="height: 40%">
+        <img src="images/7/contentBg.png" style="float: right; height: 100%">
+      </footer>
+    </div>
+    <div class="pageview page8">
+      <header style="height: 30%; position: relative">
+        <p style="position: absolute; bottom: 0; right: 5rem"><img style="width: 4rem; float: right" src="images/8/expert.png"></p>
+      </header>
+      <div style="height: 70%; padding-left: 1.5rem">
+        <p>这一年</p>
+        <p style="font-size: 1.25rem"><span style="font-size: 2rem">您</span>的差旅足迹</p>
+        <p>超过了全公司<span style="color:#AE0101;">87.3%</span>的员工</p>
+        <br/>
+        <p style="font-size: 0.8rem">去过<span style="font-size: 1.25rem">9</span>座城市、夜宿酒店<span>23</span>晚</p>
+        <p style="font-size: 0.8rem">乘坐<span style="font-size: 1.25rem">89</span>次飞机、<span style="font-size: 1.25rem">10</span>次火车</p>
+        <p style="font-size: 0.8rem">飞机上度过了<span style="font-size: 1.25rem">6.7</span>天、约绕地球<span style="font-size: 1.25rem">5</span>圈</p>
+        <div style="font-size: 0.6rem; padding-top: 1rem; padding-bottom: 1rem">
+          <p>多幸运</p>
+          <p>在有限的生命中</p>
+          <p>用每一次的飞行</p>
+          <p>获得着每个城市的记忆</p>
+        </div>
+        <br/>
+        <p><img style="height: 4.5rem" src="images/8/qrCode.png"/></p>
+      </div>
+    </div>
+  </div>
+  <div class="pagenumber" style="display: none">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+</body>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/china.js"></script>
+<script src="js/map5.js"></script>
+<script>
+$(document).ready(function () {
+  setInterval(timerange,6000);
+  timerange();
+});
+function timerange() {
+setTimeout('test(5)', 1000);
+setTimeout('test(4)', 2000);
+setTimeout('test(3)', 3000);
+setTimeout('test(2)', 4000);
+setTimeout('test(1)', 5000);
+setTimeout('test(6)', 6000);
+}
+function test(a) {
+if(a==6){
+$(".foot1").addClass('hide');
+$(".foot6").removeClass('hide');
+return;
+}
+$(".foot" + a).removeClass('hide');
+
+$(".foot"+(a+1)).addClass('hide');
+}
+</script>
+</html>
